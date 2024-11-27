@@ -1,0 +1,89 @@
+\hypertarget{classGreenBuildingService}{}\doxysection{Green\+Building\+Service Class Reference}
+\label{classGreenBuildingService}\index{GreenBuildingService@{GreenBuildingService}}
+
+
+Custom service derived from mbed\textquotesingle{}s BLE Environmental Service. This service provides air temperature, humidity and soil moisture measurement.  
+
+
+
+
+{\ttfamily \#include $<$Green\+Building\+Service.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structGreenBuildingService_1_1PlantEnvironmentType__t}{Plant\+Environment\+Type\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGreenBuildingService_af7f904b0c1a97380904025ae914f0c30}{Green\+Building\+Service}} (BLE \&\+\_\+ble)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGreenBuildingService}{Green\+Building\+Service}} constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGreenBuildingService_a2e8830cb9c329dc4e916c47f0835912d}{update\+Plant\+Environment}} (\mbox{\hyperlink{structGreenBuildingService_1_1PlantEnvironmentType__t}{Plant\+Environment\+Type\+\_\+t}} new\+Plant\+Environment\+Val)
+\begin{DoxyCompactList}\small\item\em Update plant environment characteristic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint16\+\_\+t \mbox{\hyperlink{classGreenBuildingService_ad158c0b052ba1d3cb701db6f8d66d067}{UUID\+\_\+\+GREEN\+\_\+\+BUILDING\+\_\+\+SERVICE}} = 0x\+EB00
+\item 
+static const uint16\+\_\+t \mbox{\hyperlink{classGreenBuildingService_afe217619d68c626d8b1ee08f4ce17f1f}{UUID\+\_\+\+PLANT\+\_\+\+ENVIRONMENT\+\_\+\+CHAR}} = 0x\+EB01
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Custom service derived from mbed\textquotesingle{}s BLE Environmental Service. This service provides air temperature, humidity and soil moisture measurement. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGreenBuildingService_af7f904b0c1a97380904025ae914f0c30}\label{classGreenBuildingService_af7f904b0c1a97380904025ae914f0c30}} 
+\index{GreenBuildingService@{GreenBuildingService}!GreenBuildingService@{GreenBuildingService}}
+\index{GreenBuildingService@{GreenBuildingService}!GreenBuildingService@{GreenBuildingService}}
+\doxysubsubsection{\texorpdfstring{GreenBuildingService()}{GreenBuildingService()}}
+{\footnotesize\ttfamily Green\+Building\+Service\+::\+Green\+Building\+Service (\begin{DoxyParamCaption}\item[{BLE \&}]{\+\_\+ble }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{\hyperlink{classGreenBuildingService}{Green\+Building\+Service}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ble} & Reference to BLE device. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGreenBuildingService_a2e8830cb9c329dc4e916c47f0835912d}\label{classGreenBuildingService_a2e8830cb9c329dc4e916c47f0835912d}} 
+\index{GreenBuildingService@{GreenBuildingService}!updatePlantEnvironment@{updatePlantEnvironment}}
+\index{updatePlantEnvironment@{updatePlantEnvironment}!GreenBuildingService@{GreenBuildingService}}
+\doxysubsubsection{\texorpdfstring{updatePlantEnvironment()}{updatePlantEnvironment()}}
+{\footnotesize\ttfamily void Green\+Building\+Service\+::update\+Plant\+Environment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGreenBuildingService_1_1PlantEnvironmentType__t}{Plant\+Environment\+Type\+\_\+t}}}]{new\+Plant\+Environment\+Val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update plant environment characteristic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Plant\+Environment\+Val} & New plant environment measurement. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGreenBuildingService_ad158c0b052ba1d3cb701db6f8d66d067}\label{classGreenBuildingService_ad158c0b052ba1d3cb701db6f8d66d067}} 
+\index{GreenBuildingService@{GreenBuildingService}!UUID\_GREEN\_BUILDING\_SERVICE@{UUID\_GREEN\_BUILDING\_SERVICE}}
+\index{UUID\_GREEN\_BUILDING\_SERVICE@{UUID\_GREEN\_BUILDING\_SERVICE}!GreenBuildingService@{GreenBuildingService}}
+\doxysubsubsection{\texorpdfstring{UUID\_GREEN\_BUILDING\_SERVICE}{UUID\_GREEN\_BUILDING\_SERVICE}}
+{\footnotesize\ttfamily const uint16\+\_\+t Green\+Building\+Service\+::\+UUID\+\_\+\+GREEN\+\_\+\+BUILDING\+\_\+\+SERVICE = 0x\+EB00\hspace{0.3cm}{\ttfamily [static]}}
+
+Green Building service UUID \mbox{\Hypertarget{classGreenBuildingService_afe217619d68c626d8b1ee08f4ce17f1f}\label{classGreenBuildingService_afe217619d68c626d8b1ee08f4ce17f1f}} 
+\index{GreenBuildingService@{GreenBuildingService}!UUID\_PLANT\_ENVIRONMENT\_CHAR@{UUID\_PLANT\_ENVIRONMENT\_CHAR}}
+\index{UUID\_PLANT\_ENVIRONMENT\_CHAR@{UUID\_PLANT\_ENVIRONMENT\_CHAR}!GreenBuildingService@{GreenBuildingService}}
+\doxysubsubsection{\texorpdfstring{UUID\_PLANT\_ENVIRONMENT\_CHAR}{UUID\_PLANT\_ENVIRONMENT\_CHAR}}
+{\footnotesize\ttfamily const uint16\+\_\+t Green\+Building\+Service\+::\+UUID\+\_\+\+PLANT\+\_\+\+ENVIRONMENT\+\_\+\+CHAR = 0x\+EB01\hspace{0.3cm}{\ttfamily [static]}}
+
+Plant environment characteristic UUID 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Green\+Building\+Service.\+h\end{DoxyCompactItemize}
